@@ -21,6 +21,7 @@
 		0C8E7136DDB50314A5DC43EE /* Pods-firebaseLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseLogin.debug.xcconfig"; path = "Target Support Files/Pods-firebaseLogin/Pods-firebaseLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		2273EBA2D81ED6231A9845A4 /* Pods_firebaseLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebaseLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E69E49E0D5E245C951F2DA /* Pods-firebaseLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseLogin.release.xcconfig"; path = "Target Support Files/Pods-firebaseLogin/Pods-firebaseLogin.release.xcconfig"; sourceTree = "<group>"; };
+		47BF531124A1EA8700648D75 /* firebaseLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = firebaseLogin.entitlements; sourceTree = "<group>"; };
 		EBE7DB0924A07B9C00B5F3BA /* firebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE7DB0C24A07B9C00B5F3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE7DB0E24A07B9C00B5F3BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		EBE7DB0B24A07B9C00B5F3BA /* firebaseLogin */ = {
 			isa = PBXGroup;
 			children = (
+				47BF531124A1EA8700648D75 /* firebaseLogin.entitlements */,
 				EBE7DB0C24A07B9C00B5F3BA /* AppDelegate.swift */,
 				EBE7DB0E24A07B9C00B5F3BA /* SceneDelegate.swift */,
 				EBE7DB1024A07B9C00B5F3BA /* ViewController.swift */,
@@ -375,6 +377,8 @@
 			baseConfigurationReference = 0C8E7136DDB50314A5DC43EE /* Pods-firebaseLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = firebaseLogin/firebaseLogin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PA8K389HDA;
 				INFOPLIST_FILE = firebaseLogin/Info.plist;
@@ -384,6 +388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kmy.firebaseLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,6 +399,8 @@
 			baseConfigurationReference = 29E69E49E0D5E245C951F2DA /* Pods-firebaseLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = firebaseLogin/firebaseLogin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PA8K389HDA;
 				INFOPLIST_FILE = firebaseLogin/Info.plist;
@@ -403,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kmy.firebaseLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

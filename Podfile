@@ -10,4 +10,5 @@ target 'firebaseLogin' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'
+  pod 'Firebase/Messaging'
 end
