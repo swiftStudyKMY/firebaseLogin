@@ -12,14 +12,12 @@ import Firebase
 import GoogleSignIn
 import FBSDKLoginKit
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     
     @IBOutlet weak var passwd: UITextField!
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +50,7 @@ class ViewController: UIViewController {
         }
     }
 
+    // email을 이용한 Firebase auth
     @IBAction func signInEmail(_ sender: Any) {
         print("signInEmail clicked")
         
@@ -59,27 +58,21 @@ class ViewController: UIViewController {
         
         Auth.auth().createUser(withEmail: email.text!, password: passwd.text!) { authResult, error in
             
-            print(authResult)
+             guard let user = authResult?.user else { return }
             
-              if error != nil {return}
-              
-              self.alert("회원가입 완료")
-
+              if error == nil {
+                self.alert("회원가입 완료")
+                
+                print(user) // FIRUser
+                
+              }else{
+                self.alert("회원가입 실패")
+              }
         }
-//
-//
-//        Auth.auth().signIn(withEmail: email.text!, password: passwd.text!) { [weak self] authResult, error in
-//          guard let strongSelf = self else { return }
-//          // ...
-//            if error != nil {return}
-//
-//            self?.alert("회원가입 완료")
-//
-//        }
     }
     
     
-    
+    // Google을 이용한 Firebase auth
     @IBAction func signIn(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()
     }
@@ -89,4 +82,9 @@ class ViewController: UIViewController {
 
 
 }
+
+
+
+
+ // Add this to the body class ViewController: UIViewController { override func viewDidLoad() { super.viewDidLoad() let loginButton = FBLoginButton() loginButton.center = view.center view.addSubview(loginButton) } }
 
