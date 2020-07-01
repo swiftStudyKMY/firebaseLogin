@@ -123,6 +123,7 @@
 				EBE7DB0724A07B9C00B5F3BA /* Resources */,
 				315D25EA3FB7146B8DC46A20 /* [CP] Embed Pods Frameworks */,
 				DF6A68E5D0F7B509BD9B3CB6 /* [CP] Copy Pods Resources */,
+				EBFEDFBA24ACE45B005217FE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -237,6 +238,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-firebaseLogin/Pods-firebaseLogin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		EBFEDFBA24ACE45B005217FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\n${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}\n\n$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

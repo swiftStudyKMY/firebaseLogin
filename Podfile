@@ -12,4 +12,6 @@ target 'firebaseLogin' do
   pod 'FBSDKLoginKit'
   pod 'Firebase/Messaging'
   pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Crashlytics'
+  # Recommended: Add the Firebase pod for Google Analytics
 end
