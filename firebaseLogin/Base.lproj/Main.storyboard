@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nOh-gb-lSI">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="firebaseLogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thg-b2-T5L">
-                                <rect key="frame" x="72" y="224" width="231" height="48"/>
+                                <rect key="frame" x="72" y="223" width="231" height="48"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="GP8-ix-Uux"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efL-nS-SbS" customClass="GIDSignInButton">
-                                <rect key="frame" x="72" y="280" width="231" height="48"/>
+                                <rect key="frame" x="72" y="279" width="231" height="0.0"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="valueChanged" id="IjV-47-Nb2"/>
@@ -73,6 +73,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="a8t-k3-gvC"/>
                     <connections>
                         <outlet property="email" destination="4rc-Wr-V52" id="T5d-zK-01u"/>
                         <outlet property="passwd" destination="7sy-xe-bDl" id="iNz-PX-Zyw"/>
@@ -80,7 +81,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="858" y="913"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="nLO-dE-v1c">
+            <objects>
+                <viewController id="M1j-A0-HdE" customClass="MainViewController" customModule="firebaseLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AgI-vU-Ojg" customClass="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MfH-oC-ihE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IVC-Wr-xb0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDK-KF-0xA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858.39999999999998" y="138.91625615763547"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GaE-f2-eQD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nOh-gb-lSI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DNQ-E8-Zm0">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Nyt-jJ-Zof" kind="relationship" relationship="viewControllers" id="uKy-IR-Ssg"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Jen-B9-QUo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooZ-fX-ylu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1026.4000000000001" y="138.91625615763547"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="iX0-3C-D0D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nyt-jJ-Zof" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="0Rt-oy-1bA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="obP-8I-pTy">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M1j-A0-HdE" kind="relationship" relationship="rootViewController" id="vdT-Hh-TDd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgs-Hi-wfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="138.91625615763547"/>
         </scene>
     </scenes>
 </document>

@@ -76,15 +76,7 @@ class ViewController: UIViewController {
     @IBAction func signIn(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()
     }
-    
-    
-    
-
 
 }
 
-
-
-
- // Add this to the body class ViewController: UIViewController { override func viewDidLoad() { super.viewDidLoad() let loginButton = FBLoginButton() loginButton.center = view.center view.addSubview(loginButton) } }
 

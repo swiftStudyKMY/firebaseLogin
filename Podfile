@@ -11,4 +11,5 @@ target 'firebaseLogin' do
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'
   pod 'Firebase/Messaging'
+  pod 'Firebase/RemoteConfig'
 end
