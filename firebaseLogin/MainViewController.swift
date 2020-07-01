@@ -11,15 +11,17 @@ import UIKit
 import Firebase
 
 class MainViewController:UIViewController{
-    
+
+    //deprecated
+//    var remoteConfig : FirebaseRemoteConfig!
     var remoteConfig : RemoteConfig!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "MainViewController"
         
+        //remoteConfig 초기 설정.
         remoteConfig = RemoteConfig.remoteConfig()
         remoteConfig.setDefaults(fromPlist: "firebaseSwiftRemoteConfigDefault")
         
@@ -43,6 +45,7 @@ class MainViewController:UIViewController{
         
 //        remoteConfig.configSettings = remoteConfigSettings
         
+        
         remoteConfig.fetch(withExpirationDuration: 0) { (state, error) in
             if state == .success {
                 //deprecated
@@ -54,12 +57,15 @@ class MainViewController:UIViewController{
         }
         
     }
+
     
     func dpMSG(){
+        
         let msg = remoteConfig["welcome_msg"].stringValue
         let caps = remoteConfig["welcome_msg_caps"].boolValue
         let bgColor = remoteConfig["bgColor"].numberValue
         
+        // 서버에서 세팅하는 값 확인용
         print("msg = \(msg) \n caps = \(caps)\n bgColor = \(bgColor)")
         
         if (bgColor == 1) {
