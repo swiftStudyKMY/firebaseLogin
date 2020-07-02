@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="858" y="913"/>
+            <point key="canvasLocation" x="-84" y="881"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="nLO-dE-v1c">
@@ -112,6 +112,7 @@
                     <connections>
                         <segue destination="Nyt-jJ-Zof" kind="relationship" relationship="viewControllers" id="uKy-IR-Ssg"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Jen-B9-QUo"/>
+                        <segue destination="UIY-Iy-78h" kind="relationship" relationship="viewControllers" id="MI6-Dz-gLm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooZ-fX-ylu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -136,6 +137,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgs-Hi-wfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-84" y="138.91625615763547"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="av6-ew-1F0">
+            <objects>
+                <viewController id="UIY-Iy-78h" customClass="DynamicLinkVC" customModule="firebaseLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="090-sp-9Ay">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MNH-st-8m4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Rbs-gR-DCY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wvb-Sl-Gcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="-552"/>
         </scene>
     </scenes>
 </document>

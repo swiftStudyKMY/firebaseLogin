@@ -27,6 +27,9 @@ PODS:
   - Firebase/Crashlytics (6.27.0):
     - Firebase/CoreOnly
     - FirebaseCrashlytics (~> 4.2.0)
+  - Firebase/DynamicLinks (6.27.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (~> 4.1.0)
   - Firebase/Messaging (6.27.0):
     - Firebase/CoreOnly
     - FirebaseMessaging (~> 4.5.0)
@@ -66,6 +69,8 @@ PODS:
     - GoogleDataTransportCCTSupport (~> 3.1)
     - nanopb (~> 1.30905.0)
     - PromisesObjC (~> 1.2)
+  - FirebaseDynamicLinks (4.1.0):
+    - FirebaseCore (~> 6.8)
   - FirebaseInstallations (1.4.0):
     - FirebaseCore (~> 6.8)
     - GoogleUtilities/Environment (~> 6.6)
@@ -144,6 +149,7 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Crashlytics
+  - Firebase/DynamicLinks
   - Firebase/Messaging
   - Firebase/RemoteConfig
   - GoogleSignIn
@@ -160,6 +166,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCrashlytics
+    - FirebaseDynamicLinks
     - FirebaseInstallations
     - FirebaseInstanceID
     - FirebaseMessaging
@@ -186,6 +193,7 @@ SPEC CHECKSUMS:
   FirebaseCore: feda061cb1ee6d8ad4824f4a4a8ffbcfe284f595
   FirebaseCoreDiagnostics: 4505e4d4009b1d93f605088ee7d7764d5f0d1c84
   FirebaseCrashlytics: 7d0fa02ea8842cc4b2ab07b0735edafde1ad77d6
+  FirebaseDynamicLinks: 50cff91aff05347770be750dde61d3311ff7ffc8
   FirebaseInstallations: 293f567159b6d66d1c990f13bb868066096c94ec
   FirebaseInstanceID: 3b119bfe90e904851218159c9a4ecb847cc51d18
   FirebaseMessaging: ad9e1a80ea64905e01a0ce1b3eb76a2944544151
@@ -201,6 +209,6 @@ SPEC CHECKSUMS:
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
 
-PODFILE CHECKSUM: 1925de9414f7df9c865984eabdd5b7be180234bc
+PODFILE CHECKSUM: 57a939b39b03583ca8606b9bcde673bcb86298b1
 
-COCOAPODS: 1.9.0.beta.2
+COCOAPODS: 1.9.3

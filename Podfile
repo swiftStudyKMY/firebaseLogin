@@ -7,11 +7,20 @@ target 'firebaseLogin' do
 
   # Pods for firebaseLogin
   pod 'Firebase/Analytics'
+
   pod 'Firebase/Auth'
+
   pod 'GoogleSignIn'
+
   pod 'FBSDKLoginKit'
+
   pod 'Firebase/Messaging'
+
   pod 'Firebase/RemoteConfig'
+
   pod 'Firebase/Crashlytics'
+
+  pod 'Firebase/DynamicLinks'
+
   # Recommended: Add the Firebase pod for Google Analytics
 end

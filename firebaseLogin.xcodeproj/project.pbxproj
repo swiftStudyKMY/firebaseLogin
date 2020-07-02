@@ -10,6 +10,7 @@
 		19962FC378445D2299252520 /* Pods_firebaseLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2273EBA2D81ED6231A9845A4 /* Pods_firebaseLogin.framework */; };
 		4764B1DE24AC3E07009B2D39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4764B1DD24AC3E07009B2D39 /* MainViewController.swift */; };
 		4764B1E124AC4072009B2D39 /* firebaseSwiftRemoteConfigDefault.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4764B1E024AC4072009B2D39 /* firebaseSwiftRemoteConfigDefault.plist */; };
+		4764B1E524ADADB2009B2D39 /* DynamicLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4764B1E424ADADB2009B2D39 /* DynamicLinkVC.swift */; };
 		EBE7DB0D24A07B9C00B5F3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7DB0C24A07B9C00B5F3BA /* AppDelegate.swift */; };
 		EBE7DB0F24A07B9C00B5F3BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7DB0E24A07B9C00B5F3BA /* SceneDelegate.swift */; };
 		EBE7DB1124A07B9C00B5F3BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7DB1024A07B9C00B5F3BA /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		29E69E49E0D5E245C951F2DA /* Pods-firebaseLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseLogin.release.xcconfig"; path = "Target Support Files/Pods-firebaseLogin/Pods-firebaseLogin.release.xcconfig"; sourceTree = "<group>"; };
 		4764B1DD24AC3E07009B2D39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4764B1E024AC4072009B2D39 /* firebaseSwiftRemoteConfigDefault.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = firebaseSwiftRemoteConfigDefault.plist; sourceTree = "<group>"; };
+		4764B1E424ADADB2009B2D39 /* DynamicLinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLinkVC.swift; sourceTree = "<group>"; };
 		47BF531124A1EA8700648D75 /* firebaseLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = firebaseLogin.entitlements; sourceTree = "<group>"; };
 		EBE7DB0924A07B9C00B5F3BA /* firebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE7DB0C24A07B9C00B5F3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,9 @@
 		4764B1DF24AC3F35009B2D39 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EBE7DB2024A07D3E00B5F3BA /* GoogleService-Info.plist */,
+				4764B1E024AC4072009B2D39 /* firebaseSwiftRemoteConfigDefault.plist */,
+				EBE7DB1A24A07B9F00B5F3BA /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -100,12 +105,10 @@
 				EBE7DB0E24A07B9C00B5F3BA /* SceneDelegate.swift */,
 				4764B1DD24AC3E07009B2D39 /* MainViewController.swift */,
 				EBE7DB1024A07B9C00B5F3BA /* ViewController.swift */,
+				4764B1E424ADADB2009B2D39 /* DynamicLinkVC.swift */,
 				EBE7DB1224A07B9C00B5F3BA /* Main.storyboard */,
 				EBE7DB1524A07B9F00B5F3BA /* Assets.xcassets */,
 				EBE7DB1724A07B9F00B5F3BA /* LaunchScreen.storyboard */,
-				EBE7DB2024A07D3E00B5F3BA /* GoogleService-Info.plist */,
-				EBE7DB1A24A07B9F00B5F3BA /* Info.plist */,
-				4764B1E024AC4072009B2D39 /* firebaseSwiftRemoteConfigDefault.plist */,
 			);
 			path = firebaseLogin;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				EBE7DB1124A07B9C00B5F3BA /* ViewController.swift in Sources */,
 				EBE7DB0D24A07B9C00B5F3BA /* AppDelegate.swift in Sources */,
+				4764B1E524ADADB2009B2D39 /* DynamicLinkVC.swift in Sources */,
 				EBE7DB0F24A07B9C00B5F3BA /* SceneDelegate.swift in Sources */,
 				4764B1DE24AC3E07009B2D39 /* MainViewController.swift in Sources */,
 			);
